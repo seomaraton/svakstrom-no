@@ -30,7 +30,7 @@ NAV = [
     ("anlegg", "Anlegg"),
     ("sikkerhet", "Sikkerhet"),
     ("regelverk", "Regelverk"),
-    ("gjor-det-selv", "Gjør det selv"),
+    ("gjor-det-selv", "Egeninnsats"),
     ("utdanning", "Utdanning"),
     ("ordliste", "Ordliste"),
 ]

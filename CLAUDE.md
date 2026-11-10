@@ -5,6 +5,7 @@ Statisk nettsted for svakstrom.no. Les README.md for struktur og kommandoer.
 ## Regler for innhold
 
 - Språk: norsk bokmål. Korte, direkte setninger.
+- Tone: saklig og nøktern. Bare fakta. Ingen humor, retoriske spørsmål, slagord eller utropstegn. Overskrifter skal beskrive innholdet.
 - Hver faktaopplysning (tall, grense, dato, regel) skal ha kildehenvisning med `[[n]]`.
 - Skriv med egne ord. Ikke kopier tekst fra kildene.
 - Skill mellom gjeldende rett og historiske definisjoner. FEF 1987 (kilde 3) er opphevet.
