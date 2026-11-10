@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="nb">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{full_title}}</title>
+  <meta name="description" content="{{description}}">
+  <link rel="canonical" href="{{canonical}}">
+  <meta property="og:title" content="{{full_title}}">
+  <meta property="og:description" content="{{description}}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:locale" content="nb_NO">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="{{body_class}}">
+  <a class="skip" href="#innhold">Hopp til innholdet</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="index.html" aria-label="Svakstrøm.no, forsiden">
+        <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="5" fill="var(--svak)"/><path d="M5 17h5l2.5-7 4 13 3-9 1.5 3H27" fill="none" stroke="var(--bg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>svakstrøm<span class="tld">.no</span></span>
+      </a>
+      <nav aria-label="Hovedmeny">
+        <ul>
+{{nav}}
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="innhold" class="wrap">
+{{content}}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap cols">
+      <div>
+        <strong>Svakstrøm.no</strong>
+        <p>Uavhengig faginformasjon om svakstrøm og sterkstrøm i Norge. Siden er en faglig oversikt og ikke juridisk rådgivning. Gjeldende forskrifter på Lovdata og veiledning fra DSB og Nkom gjelder foran innholdet her.</p>
+      </div>
+      <ul>
+        <li><a href="kilder.html">Kilder</a></li>
+        <li><a href="ordliste.html">Ordliste</a></li>
+        <li><a href="om.html">Om siden</a></li>
+      </ul>
+    </div>
+    <div class="wrap small">© {{year}} Svakstrøm.no · Ingen informasjonskapsler, ingen sporing.</div>
+  </footer>
+</body>
+</html>

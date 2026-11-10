@@ -1,0 +1,129 @@
+<!--
+title: Svakstrøm og sterkstrøm
+description: Forskjellen på svakstrøm og sterkstrøm, og på lavspenning og høyspenning. Med grenser i volt og en spenningsskala fra 5 V til 420 kV.
+-->
+<div class="page-head">
+  <span class="crumb"><a href="index.html">Forsiden</a> / Svakstrøm og sterkstrøm</span>
+  <h1>Svakstrøm og sterkstrøm</h1>
+  <p class="lede">Svak og sterk beskriver hva anlegget brukes til. Lav og høy beskriver bare spenningsnivået. De to inndelingene går på tvers av hverandre, og det er her de fleste misforståelsene oppstår.</p>
+</div>
+
+<section>
+  <h2>To begrepspar</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Begrep</th><th>Hva det beskriver</th><th>Grense</th></tr></thead>
+      <tbody>
+        <tr><th>Svakstrøm</th><td>Anlegg for signaler og informasjon, med liten effekt</td><td>Ingen fast voltgrense. Formål og fare avgjør.[[3]]</td></tr>
+        <tr><th>Sterkstrøm</th><td>Anlegg for elektrisk energi</td><td>Alt som ikke er svakstrøm[[3]]</td></tr>
+        <tr><th>Ekstra lav spenning (ELV)</th><td>Nederste del av lavspenningsområdet</td><td class="n">≤ 50 V AC / ≤ 120 V DC[[7]]</td></tr>
+        <tr><th>Lavspenning</th><td>Spenningsnivået i vanlige installasjoner. 230 V er normalt i boliger, 400 V er vanlig i industri.</td><td class="n">≤ 1000 V AC / ≤ 1500 V DC[[5,6]]</td></tr>
+        <tr><th>Høyspenning</th><td>Spenningsnivået i kraftnettet og enkelte industrianlegg</td><td class="n">&gt; 1000 V AC / &gt; 1500 V DC[[3,6]]</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Stikkontakten hjemme er derfor <strong>sterkstrøm og lavspenning</strong> på samme tid. En 12 V belysningskurs med stor transformator er også sterkstrøm, selv om spenningen er ekstra lav.</p>
+</section>
+
+<section>
+  <h2>Spenningsskalaen</h2>
+  <p>Figuren viser vanlige spenninger og de formelle grensene på én logaritmisk akse fra 1 volt til 1 million volt. Hvert hakk på aksen er ti ganger høyere enn det forrige.</p>
+  <figure>
+    <div class="scroll">
+      <svg viewBox="0 0 900 232" role="img" aria-label="Logaritmisk spenningsskala fra 1 volt til 1 million volt med eksempler og grenser">
+        <g font-size="12" text-anchor="middle">
+          <text x="135.5" y="34">5 V USB</text>
+          <text x="187.5" y="62">12 V</text>
+          <text x="228.6" y="34">24 V</text>
+          <text x="269.8" y="62">48 V tele/PoE</text>
+          <text x="362.8" y="34">230 V bolig</text>
+          <text x="395.6" y="62">400 V</text>
+          <text x="633.4" y="34">22 kV</text>
+          <text x="739.8" y="62">132 kV</text>
+          <text x="808.5" y="34">420 kV</text>
+        </g>
+        <path d="M135.5 40V98M187.5 68V98M228.6 40V98M269.8 68V98M362.8 40V98M395.6 68V98M633.4 40V98M739.8 68V98M808.5 40V98" stroke="var(--muted)" stroke-width="1" fill="none"/>
+        <g fill="var(--ink)">
+          <circle cx="135.5" cy="100" r="3.5"/><circle cx="187.5" cy="100" r="3.5"/><circle cx="228.6" cy="100" r="3.5"/>
+          <circle cx="269.8" cy="100" r="3.5"/><circle cx="362.8" cy="100" r="3.5"/><circle cx="395.6" cy="100" r="3.5"/>
+          <circle cx="633.4" cy="100" r="3.5"/><circle cx="739.8" cy="100" r="3.5"/><circle cx="808.5" cy="100" r="3.5"/>
+        </g>
+        <rect x="40" y="104" width="232.2" height="26" fill="var(--band-1)"/>
+        <rect x="272.2" y="104" width="177.8" height="26" fill="var(--band-2)"/>
+        <rect x="450" y="104" width="410" height="26" fill="var(--band-3)"/>
+        <g font-size="12" text-anchor="middle">
+          <text class="b" x="156" y="121.5">Ekstra lav spenning</text>
+          <text class="b" x="361" y="121.5">Lavspenning</text>
+          <text class="b" x="655" y="121.5">Høyspenning</text>
+        </g>
+        <path d="M40 130v7M176.7 130v7M313.3 130v7M450 130v7M586.7 130v7M723.3 130v7M860 130v7" stroke="var(--muted)" stroke-width="1" fill="none"/>
+        <g font-size="11" text-anchor="middle">
+          <text class="m" x="40" y="151">1 V</text><text class="m" x="176.7" y="151">10 V</text><text class="m" x="313.3" y="151">100 V</text>
+          <text class="m" x="450" y="151">1 kV</text><text class="m" x="586.7" y="151">10 kV</text><text class="m" x="723.3" y="151">100 kV</text><text class="m" x="860" y="151">1 MV</text>
+        </g>
+        <path d="M272.2 130V176M324.1 104V200M450 157V176M474.1 104V200" stroke="var(--ink)" stroke-width="1.2" stroke-dasharray="3 3" fill="none"/>
+        <g font-size="12">
+          <text x="268" y="180" text-anchor="end">50 V AC</text>
+          <text x="328" y="204">120 V DC</text>
+          <text x="446" y="180" text-anchor="end">1000 V AC</text>
+          <text x="478" y="204">1500 V DC</text>
+        </g>
+        <text class="m" x="40" y="224" font-size="11">Fargefeltene følger grensene for vekselspenning (AC). Grensene for likespenning (DC) er merket separat.</text>
+      </svg>
+    </div>
+    <figcaption>Grenser: ekstra lav spenning inntil 50 V AC eller 120 V DC,[[7]] lavspenning inntil 1000 V AC eller 1500 V DC.[[5]] Nettspenninger: 230 og 400 V til forbruker, 22 kV i distribusjonsnettet, 132 kV i regionalnettet og 420 kV som høyeste nivå i transmisjonsnettet.[[20,21,23]] Figuren viser spenningsnivå. Den sier ikke hva som er svakstrøm og sterkstrøm.</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2>Side om side</h2>
+  <div class="scroll">
+    <table>
+      <thead><tr><th></th><th class="c-svak">Svakstrøm</th><th class="c-sterk">Sterkstrøm</th></tr></thead>
+      <tbody>
+        <tr><th>Formål</th><td>Overføre informasjon og signaler[[1]]</td><td>Overføre energi[[2]]</td></tr>
+        <tr><th>Typisk spenning</th><td>Fra noen få volt til rundt 57 V i PoE[[25]]</td><td>230 og 400 V i bygg, opptil 420 kV i nettet[[5,20]]</td></tr>
+        <tr><th>Største risiko</th><td>Funksjonssvikt, forstyrrelser og varmgang ved høy strøm[[13]]</td><td>Strøm gjennom kroppen, lysbuer og brann[[18]]</td></tr>
+        <tr><th>Myndighet</th><td>Nkom[[14]]</td><td>DSB[[4]]</td></tr>
+        <tr><th>Sentralt regelverk</th><td>Ekomloven og autorisasjonsforskriften[[13,16]]</td><td>El-tilsynsloven, fel, fek og NEK 400[[10,11]]</td></tr>
+        <tr><th>Krav til virksomheten</th><td>Ekomnettautorisasjon (ENA)[[14]]</td><td>Registrering i Elvirksomhetsregisteret[[4]]</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Sterkstrøm i korte trekk</h2>
+  <p>Sterkstrøm omfatter hele kjeden fra kraftverket til stikkontakten. Kraften fraktes med høy spenning fordi samme effekt da kan overføres med lavere strøm. Tapet i en ledning øker med kvadratet av strømmen, så høy spenning gir langt mindre tap over lange avstander. Transformatorstasjoner setter spenningen trinnvis ned mot forbrukeren.[[22]]</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>Nettnivå</th><th>Vanlig spenning</th><th>Oppgave</th></tr></thead>
+      <tbody>
+        <tr><th>Transmisjonsnett</th><td class="n">300 og 420 kV</td><td>Landsdekkende hovedveier for kraft, og forbindelsene til utlandet. Enkelte steder inngår 132 kV.[[20]]</td></tr>
+        <tr><th>Regionalnett</th><td class="n">66 og 132 kV</td><td>Bindeleddet mellom transmisjonsnettet og de lokale nettene[[21]]</td></tr>
+        <tr><th>Distribusjonsnett, høyspent</th><td class="n">11 og 22 kV</td><td>Lokal fordeling fram til nettstasjonene[[22]]</td></tr>
+        <tr><th>Distribusjonsnett, lavspent</th><td class="n">230 og 400 V</td><td>Levering til boliger og virksomheter[[23]]</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>Ekstra lav spenning er fortsatt sterkstrøm</h2>
+  <p>Normen NEK 400 beskriver tre måter å bruke ekstra lav spenning på i en installasjon. Alle holder seg innenfor 50 V AC eller 120 V DC.[[7,8]]</p>
+  <div class="scroll">
+    <table>
+      <thead><tr><th>System</th><th>Kjennetegn</th><th>Typisk bruk</th></tr></thead>
+      <tbody>
+        <tr><th>SELV</th><td>Sikker atskillelse fra andre kretser, og ingen forbindelse til jord</td><td>Belysning og utstyr i våte soner, ladere</td></tr>
+        <tr><th>PELV</th><td>Sikker atskillelse fra andre kretser, men kretsen kan være jordet</td><td>Styrestrøm i maskiner og tavler</td></tr>
+        <tr><th>FELV</th><td>Ekstra lav spenning av funksjonelle grunner, uten atskillelsen som SELV og PELV krever</td><td>Kretser der lav spenning trengs, men andre vernetiltak må beskytte mot støt</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div class="next">
+  <a href="hva-er-svakstrom.html">← Hva er svakstrøm</a>
+  <a href="anlegg.html">Anlegg og teknologi →</a>
+</div>
